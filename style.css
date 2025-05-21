@@ -60,6 +60,7 @@ footer {
   font-size: 0.9rem;
 }
 
+
 .rickroll-scroll {
   margin: 2rem 0;
   padding: 1rem;
@@ -73,13 +74,18 @@ footer {
   font-size: 1.5rem;
 }
 
+.rickroll-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
 
 .rickroll-container {
   display: flex;
   gap: 1rem;
-  overflow: hidden;
-  padding-bottom: 1rem;
   animation: scrollRickroll 20s linear infinite;
+  width: max-content;
 }
 
 @keyframes scrollRickroll {
@@ -93,12 +99,13 @@ footer {
 
 .rickroll-container iframe {
   width: 300px;
-  height: 169px; 
+  height: 169px;
   flex-shrink: 0;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+/* ts is suppose to help with mobile shi */
 @media (max-width: 768px) {
   .container {
     grid-template-columns: 1fr;
